@@ -8,31 +8,39 @@
     <title>First Web Form</title>
 </head>
 <body>
-    <h1>My First Web</h1>
-    <form method="POST" action="https://jkorpela.fi/cgi-bin/echo.cgi" target="cgi-results">
-        <fieldset>
-            <legend>Name Information:</legend>
-            <label for="firstName">First Name:</label>
-            <input type="text" name="firstName" id="firstName">
-            <label for="lastName">Last Name:</label>
-            <input type="text" name="lastName" id="lastName">
-        </fieldset>
-        <fieldset>
-            <legend>Contact Information</legend>
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email">
-            <label for="telephone">Phone Number:</label>
-            <input type="tel" name="telephone" id="telephone">
-        </fieldset>
-        <fieldset>
-            <legend>Birthday:</legend>
-            <label for="dob">Birthdate</label>
-            <input type="date" name="dob" id="dob">
-        </fieldset>
-        <fieldset>
-            <input type="submit" value="Submit">
-        </fieldset>
-    </form>
-    <iframe name="cgi-results" id="cgi-results">
+    <div class="container">
+        <div class="welcome">
+            <img src="welcome.jpg" alt="welcome">
+        </div>
+        <div class="form">
+            <h2>My First Web Form</h2>
+            <form method="POST" action="https://jkorpela.fi/cgi-bin/echo.cgi" target="cgi-results">
+                <fieldset>
+                    <legend>Name Information:</legend>
+                    <label for="firstName">First Name:</label><br>
+                    <input type="text" name="firstName" id="firstName" placeholder="First Name Here" required><br><br>
+                    <label for="lastName">Last Name:</label><br>
+                    <input type="text" name="lastName" id="lastName" placeholder="Last Name Here" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label for="email">Email:</label><br>
+                    <input type="email" name="email" id="email" placeholder="An Email You Always Use" required><br><br>
+                    <label for="telephone">Phone:</label><br>
+                    <input type="tel" name="telephone" id="telephone" placeholder="A Number We Can Always Reach You At" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Birthday:</legend>
+                    <label for="dob">Birthdate</label><br>
+                    <input type="date" name="dob" id="dob" required>
+                </fieldset>
+                <fieldset>
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+            <iframe name="cgi-results" id="cgi-results">
+            </div>
+    </div>
 </body>
+
 </html>
