@@ -2,10 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stylesheet.css" rel="stylesheet">
     <title>First Web Form</title>
 </head>
 <body>
-    
+    <h1>My First Web</h1>
+    <form method="POST" action="https://jkorpela.fi/cgi-bin/echo.cgi" target="cgi-results">
+        <fieldset>
+            <legend>Name Information:</legend>
+            <label for="firstName">First Name:</label>
+            <input type="text" name="firstName" id="firstName">
+            <label for="lastName">Last Name:</label>
+            <input type="text" name="lastName" id="lastName">
+        </fieldset>
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            <label for="telephone">Phone Number:</label>
+            <input type="tel" name="telephone" id="telephone">
+        </fieldset>
+        <fieldset>
+            <legend>Birthday:</legend>
+            <label for="dob">Birthdate</label>
+            <input type="date" name="dob" id="dob">
+        </fieldset>
+        <fieldset>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+    <iframe name="cgi-results" id="cgi-results">
 </body>
 </html>
